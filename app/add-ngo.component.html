@@ -5,31 +5,32 @@
         <p>All fields marked with * are required</p>
         <table class="table table-striped table-bordered" style="font-family: Roboto">
             <thead>
-                <th><b>Ngo Name*</b></th>
-                <th><b>Address*</b></th>
-                <th><b>Organization Type*</b></th>
-                <th><b>Contact No*</b></th>
-                <th><b>Project In Charge*</b></th>
+                <th><b> Name*</b></th>
+                <th><b> UserName*</b></th>
+                <th><b> Password*</b></th>
+                <th><b> ConfirmPassword*</b></th>
+                <th><b> Address*</b></th>
+                <th><b> Organization Type*</b></th>
+                <th><b> Contact No*</b></th>
+                <th><b> Project In Charge*</b></th>
             </thead>
             <tbody>
                 <tr>
                     <td><input [(ngModel)]="ngo.name" name="name" pattern="[A-Za-z]" placeholder="Name" title="Enter only alphabets"/></td>
+                    <td><input [(ngModel)]="ngo.username" name="username" pattern="[A-Za-z]" placeholder="Enter Your Username" title="Enter only alphabets"/></td>
+                    <td><input [(ngModel)]="ngo.password" name="password" type="password" placeholder="Enter Your Password" /></td>
+                    <td><input [(ngModel)]="ngo.confirmPassword" name="confirmPassword" type="password" placeholder="Re-Enter Your Password" /></td>
                     <td><textarea [(ngModel)]="ngo.address" name="address"></textarea></td>
                     <td><input [(ngModel)]="ngo.organizationType" name="orgType"/></td>
                     <td><input [(ngModel)]="ngo.contactNo" name="contactNo" /></td>
                     <td><input [(ngModel)]="ngo.projectInCharge" name="projectInCharge" /></td>
                 </tr>
                 <tr>
-					<td><input type="submit" value="Add" class="btn btn-md btn-default" (click)="validate()" /> </td>
+					<td><input type="submit" value="Add" class="btn btn-md btn-default"  /> </td>
 				</tr>
             </tbody>
         </table>
     </form>
 </div>
-<script src="javascript">
-    function validate(){
-
-    }
-</script>
 
 <h3 class="text-center"> {{ response }} </h3> 
