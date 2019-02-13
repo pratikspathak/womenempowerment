@@ -6,9 +6,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TBL_NGO")
+@Table(name = "TBL_NGO")
 public class NGO {
-	
+
 	@Id
 	@GeneratedValue
 	private int id;
@@ -20,9 +20,9 @@ public class NGO {
 	private String organizationType;
 	private Double contactNo;
 	private String projectInCharge;
-	
+
 	public NGO() {
-	
+
 	}
 
 	public String getName() {
@@ -88,5 +88,5 @@ public class NGO {
 	public void setConfirmPassword(String confirmPassword) {
 		this.confirmPassword = confirmPassword;
 	}
-	
+
 }

@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TBL_USER1")
+@Table(name = "TBL_USER1")
 public class User {
 
 	@Id
@@ -16,25 +16,23 @@ public class User {
 	private String username;
 	private String password;
 	private String confirmPassword;
-	//private String adhaarNo;
+	// private String adhaarNo;
 	private Double mobileNumber;
 	private String birthDate;
 	private String designation;
 	private Double salary;
-	
-	
+
 	public User() {
-	
+
 	}
-	
 
-	//public String getAdhaarNo() {
-	//	return adhaarNo;
-	//}
+	// public String getAdhaarNo() {
+	// return adhaarNo;
+	// }
 
-	//public void setAdhaarNo(String adhaarNo) {
-	//	this.adhaarNo = adhaarNo;
-	//}
+	// public void setAdhaarNo(String adhaarNo) {
+	// this.adhaarNo = adhaarNo;
+	// }
 
 	public Double getMobileNumber() {
 		return mobileNumber;
