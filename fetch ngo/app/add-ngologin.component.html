@@ -1,0 +1,35 @@
+
+
+
+
+
+<h1>The Following are the details of all the registered NGO's:</h1>
+<div class="table-responsive">
+
+<table class="table" border="1px solid red"  >
+  <thead>
+      <tr>
+          <th>Name</th>    
+          <th>username</th>   
+          <th>password</th>   
+          <th>address</th>   
+          <th>contactNo</th>   
+          <th>organizationType</th>   
+          <th>Project In Charge</th> 
+      </tr>
+  </thead>
+      <tbody style="color:indigo;">
+      <tr *ngFor="let x of ngo">
+          <td> {{x.name}}</td>
+          <td> {{x.username}}</td>
+          <td> {{x.password}}</td>
+          <td> {{x.address}}</td>
+          <td> {{x.contactNo}}</td>
+          <td> {{x.organizationType}}</td>
+          <td> {{x.projectInCharge}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+
