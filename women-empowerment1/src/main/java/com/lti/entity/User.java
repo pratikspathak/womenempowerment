@@ -16,7 +16,6 @@ public class User {
 	private String username;
 	private String password;
 	private String confirmPassword;
-	// private String adhaarNo;
 	private Double mobileNumber;
 	private String birthDate;
 	private String designation;
@@ -25,14 +24,6 @@ public class User {
 	public User() {
 
 	}
-
-	// public String getAdhaarNo() {
-	// return adhaarNo;
-	// }
-
-	// public void setAdhaarNo(String adhaarNo) {
-	// this.adhaarNo = adhaarNo;
-	// }
 
 	public Double getMobileNumber() {
 		return mobileNumber;
