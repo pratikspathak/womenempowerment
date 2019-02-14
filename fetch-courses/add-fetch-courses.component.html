@@ -1,0 +1,28 @@
+<h1>The Following are the details of all the registered Courses:</h1>
+<div class="table-responsive">
+
+<table class="table" border="1px solid red"  >
+  <thead>
+      <tr>
+          <th>Course Name</th>    
+          <th>Duration</th>   
+          <th>Description</th>   
+          <th>NGO Name</th>   
+          
+      </tr>
+  </thead>
+      <tbody style="color:indigo;">
+      <tr *ngFor="let x of courses">
+          <td> {{x.courseName}}</td>
+          <td> {{x.duration}}</td>
+          <td> {{x.description}}</td>
+          <td> {{x.ngoName}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+  
+
+</div>
+
+
