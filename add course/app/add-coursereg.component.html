@@ -1,0 +1,40 @@
+<div class="container">
+    <form #mform="ngForm" class="form table-responsive" (ngSubmit)="add(mform)">
+        <div class="container">
+            <h1> Fill in your course details here</h1>
+
+            <label for="coursename"><b>Course Provided</b></label>
+
+            <select name="coursename" [(ngModel)]="course.courseName" required>
+                <option value="agriculture">Agriculture</option>
+                <option value="tailoring">Tailoring</option>
+                <option value="stiching">Stiching</option>
+            </select><br /><br />
+
+        <!-- <input type="radio" name="coursename" value="agriculture" [(ngModel)]="course.coursename">Agriculture<br />
+       <input type="radio" name="coursename" value="tailoring"  [(ngModel)]="course.coursename"> Tailoring<br />
+       <input type="radio" name="coursename" value="stiching"  [(ngModel)]="course.coursename"> Stiching<br />  <br>
+         -->
+         
+            <label for="duration"><b>Duration(in months)</b></label>
+            <input [(ngModel)]="course.duration" type="number" placeholder="Enter Duration(in months)" name="duration"
+                required><br><br>
+
+            <label for="description"><b>Description</b></label>
+            <textarea [(ngModel)]="course.description" type="text" name="description" required></textarea><br> <br>
+
+            <label for="ngoName"><b>NGO Name</b></label>
+            <input [(ngModel)]="course.ngoName" type="text" placeholder="Enter the name of the NGO" name="ngoName"
+                required><br><br>
+
+                <label for="location"><b>Location</b></label>
+                <input [(ngModel)]="course.location" type="text" placeholder="Enter the name of the NGO" name="ngoName"
+                    required><br><br>
+
+            <button type="submit" class="registerbtn">Register this course</button>
+
+        </div>
+
+    </form>
+</div>
+<h1>{{response}}</h1>
