@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TBL_COURSE")
+@Table(name = "TBL_COURSE")
 public class TrainingCourse {
 
 	@Id
@@ -16,6 +16,15 @@ public class TrainingCourse {
 	private int duration;
 	private String description;
 	private String ngoName;
+	private String location;
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
 
 	public TrainingCourse() {
 

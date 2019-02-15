@@ -22,24 +22,21 @@ public class TrainingCourseController {
 	@Autowired
 	private CourseService courseService;
 
-
 	@RequestMapping(path = "/course/add", method = RequestMethod.POST)
 	public String add(@RequestBody TrainingCourse tc) {
 		courseService.add(tc);
 		return "{\"status\" : \"Course Details Added Successfully!\"}";
 	}
 
-
 	@RequestMapping(path = "/course/{id}", method = RequestMethod.GET)
 	public TrainingCourse fetch(@PathVariable("id") int id) {
 		return courseService.fetch(id);
 	}
 
-	
 	@RequestMapping(path = "/course/fetch", method = RequestMethod.GET)
 	public List<TrainingCourse> fetchAll() {
 		List<TrainingCourse> list = courseService.fetchEach();
 		return list;
 	}
-	
+
 }
