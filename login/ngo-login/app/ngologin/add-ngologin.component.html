@@ -1,0 +1,53 @@
+
+<div class="container">
+        <form class="form table-responsive">
+          <div class="container">
+            <h1> NGO Login</h1>
+            
+            
+          
+    
+           <label for="username"><b>Username</b></label>
+            <input  [(ngModel)]="ngologin.username" type="text" placeholder="Enter Username" name="username" required>
+      
+            <label for="password"><b>Password</b></label>
+            <input [(ngModel)]="ngologin.password" type="password" placeholder="Enter Password" name="pass" required>
+
+            <button type="submit" class="registerbtn" (click)="display()">LogIn</button>
+          </div>
+          
+          <div class="container signin">
+            <p>Don't have an account? <a href="#">Register Here</a>.</p>
+          </div>
+        </form>
+    </div>
+    <script>
+      
+    </script>
+     <h1>{{response}}</h1>
+    
+  
+  <!--
+    <table class="table" >
+      <thead>
+          <tr>
+            
+              <th>Name</th>
+              <th>Username</th>
+              
+              
+          </tr>
+      </thead>
+          <tbody>
+          <tr ngFor="let user of User">
+              <td>Welcome {{user.bithDate}}</td>
+            
+            </tr>
+        </tbody>
+      </table>
+    -->
+
+    
+
+  
+  

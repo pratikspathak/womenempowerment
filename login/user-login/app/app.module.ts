@@ -1,0 +1,24 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { UserLoginComponent } from './userlogin/add-userlogin.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { UserLoginService } from './userlogin/userlogin-service';
+
+@NgModule({
+  declarations: [
+    AppComponent,UserLoginComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
+  ],
+  providers: [UserLoginService,HttpClient],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
