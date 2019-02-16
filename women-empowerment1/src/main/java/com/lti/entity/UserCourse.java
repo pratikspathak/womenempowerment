@@ -6,13 +6,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TBL_USER_COURSE")
+@Table(name = "TBL_USER_COURSE")
 public class UserCourse {
-	
+
 	@Id
 	@GeneratedValue
 	private int id;
-	private String mobileNumber;
+	private Double mobileNumber;
 	private String uname;
 	private String ngoName;
 	private String course;
@@ -25,11 +25,11 @@ public class UserCourse {
 		this.id = id;
 	}
 
-	public String getMobileNumber() {
+	public Double getMobileNumber() {
 		return mobileNumber;
 	}
 
-	public void setMobileNumber(String mobileNumber) {
+	public void setMobileNumber(Double mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
 
